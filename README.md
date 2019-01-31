@@ -1,7 +1,7 @@
 # Remiit Token Economy Pricing
 Token Homepage : <https://remiit.io>
 
-evaluation for economy expected present value and future cash flow analysis using dynamic models
+evaluation of expected present value and future cash flow analysis using dynamic models
 
 
 ## Market Ecomomic Assumption 
