@@ -1,15 +1,15 @@
 # Remiit Token Economy Pricing
 Token Homepage : <https://remiit.io>
 
-evaluation for economy expected present value and future cash flow analysis using dynamic models
+evaluation of expected present value and future cash flow analysis using dynamic models
 
 
-## Market Ecomomic Assumption 
-#### Daily Transaction ( Each country )
+## Market Economy Assumption 
+### Daily Transaction ( Each country )
 
 Model : Autoregressive integrated moving average (ARIMA) model
 
-#### Exchange Rate ( ex) USD/KRW , JPY/KRW ... )
+### Exchange Rate ( ex) USD/KRW , JPY/KRW ... )
 
 Model : Garman-Kohlagen Model
 
@@ -19,11 +19,11 @@ Currencies
 * JPY
 
 
-#### InterestRate of each country
+### InterestRate of each country
 
 Model : Vasicek Model
 
-#### Correlation
+### Correlation
 
 Model : Moving Average 
 
