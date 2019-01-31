@@ -1,12 +1,24 @@
-# assumption
+import  xenarix as xen
+import model_generate as mg
 
-# Daily Transaction ( Each country )
-# Exchange Rate ( ex) USD/KRW , JPY/KRW ... )
-# InterestRate of each country
+scenSetID='scenSet1'
+scenID='scenID'
+resultID='resultID'
+
+mg.generate(scenSet=scenSetID,
+            scen=scenID,
+            result=resultID)
+
+result = xen.ResultObj()
+
+result_multipath = result.get_multipath(scen_count=1)
+
+calculated_result = []
+
+for t, v in result.timegrid, result_multipath:
+
+    v[0]
+    calculated_result.append([])
 
 
-# result
-#
-
-import xenarix as xen
 
