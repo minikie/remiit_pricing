@@ -4,7 +4,7 @@ Token Homepage : <https://remiit.io>
 evaluation of expected present value and future cash flow analysis using dynamic models
 
 
-## Market Ecomomic Assumption 
+## Market Economy Assumption 
 ### Daily Transaction ( Each country )
 
 Model : Autoregressive integrated moving average (ARIMA) model
