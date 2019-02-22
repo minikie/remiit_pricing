@@ -5,40 +5,25 @@ evaluation of expected present value and future cash flow analysis using dynamic
 
 
 ## Market Economy Assumption 
-### Daily Transaction ( Each country )
+#### Daily Remittance Transaction
 
-Model : Autoregressive integrated moving average (ARIMA) model
+Model : Brownian Motion with constant (drift and sigma) calculated by AR(1) Model 
 
-### Exchange Rate ( ex) USD/KRW , JPY/KRW ... )
+#### Exchange Rate - USD/KRW
 
-Model : Garman-Kohlagen Model
+(As is) Constant : 1,100 (USD/KRW)
+(To be) Model : Garman-Kohlagen Model
 
-Currencies 
-* USD
-* KRW
-* JPY
-
-
-### InterestRate of each country
-
-Model : Vasicek Model
-
-### Correlation
-
-Model : Moving Average 
-
-6M Historical Data
-
-## Token Economy Assumption
+#### Token Economy Assumption
 * Collateral rate for linker(CRL)
 * Remiit Transaction Fee Rate(RTFR)
-* Distribution Rate of Transaction Fee(DRTF)
+* Dividend Rate of Transaction Fee(DRTF)
+* Dividend Frequency(Per Year)
+* Total Circulation
+* ICO Price
 
-## Analysis Assumption
-* Total Transaction
 
 ## Outputs
-* Remiit Daily Price
+* Remiit Expected Price
 * Token Value, Total Reutn and CashFlow of Token Holders
 * Collateral Value of Liker
-*
