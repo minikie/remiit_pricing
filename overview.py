@@ -5,10 +5,7 @@ import xenarix.results as xen_r
 
 # xen.set_repository('c:\repository')
 
-# generation setting
-maxyear = 5
-
-# assuption
+# assumption
 total_remittance_amount = 30000000000 # 30억 (월간)
 remittance_marketshare_ratio = 0.3
 
@@ -20,6 +17,20 @@ IEO_price = 1
 market_capitalization = remi_circulation_amount * IEO_price
 rf = 0.015
 per = 0.05
+
+
+# generation setting - simulation part
+# scen_set = xen.ScenarioSet('test')
+# scen = xen.Scenario(scen_id='testid', result_id='resultid')
+# gbm = xen_s.gbmconst(process_name='trm')
+# gbm.x0 = 30
+# scen.add_model(gbm)
+# scen.general.frequency = xen.TimeGridFrequency.EndOfMonth
+# scen.general.maxyear = 5
+# scen.general.scenario_num = 100
+# scen_set.add_scenario(scen)
+# scen_set.generate()
+
 
 total_profit = 0
 total_discounted_profit = 0
@@ -33,7 +44,7 @@ for month in range(1,12):
 remi_yield = total_discounted_profit / remi_circulation_amount
 expected_price = remi_yield / per
 
-print 'total profit : ' + str(total_profit)
-print 'total discounted profit : ' + str(total_discounted_profit)
+print 'total profit : ' + "{:,}".format(total_profit)
+print 'total discounted profit : ' + "{:,}".format(total_discounted_profit)
 print 'yield : ' + str(round(remi_yield * 100, 2)) + ' %'
-print 'expected price : ' + str(expected_price)
+print 'expected price : ' + str(round(expected_price, 2))

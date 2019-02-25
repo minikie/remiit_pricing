@@ -26,4 +26,4 @@ Model : Brownian Motion with constant (drift and sigma) calculated by AR(1) Mode
 ## Outputs
 * Remiit Expected Price
 * Token Value, Total Reutn and CashFlow of Token Holders
-* Collateral Value of Liker
+* Collateral Value of Linker
